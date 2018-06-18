@@ -1,7 +1,9 @@
 <template>
 <footer class="main-footer">
   <div class="main-footer__text">
-    LarraGer - @sergixnet eta @asiermusak garatua<br> Dokumentazio iturria: bertsozale elkartea
+    LarraGer - <a href="https://twitter.com/sergixnet" target="_blank">@Sergixnet</a>
+     eta <a href="https://twitter.com/asiermusa" target="_blank">@asiermusak</a> garatua<br>
+     Dokumentazio iturria: bertsozale elkartea
   </div>
 </footer>
 </template>

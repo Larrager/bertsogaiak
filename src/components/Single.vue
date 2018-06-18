@@ -14,7 +14,7 @@
     </div>
 
     <div class="search-box">
-      <input class="search-input" type="text" v-model="search" placeholder="Bilaketa egin...">
+      <input class="search-input" type="text" v-model="search" placeholder="Gai guztien artean iragazi...">
       <template v-if="singleType == 'Ofizioak'">
           <select class="search-select" v-model="searchMetric">
             <option v-for="metric in optionsMetrics"
