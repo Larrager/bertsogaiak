@@ -1,0 +1,101 @@
+//tipography
+//@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300i,400,400i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import './_mixins.scss'; // media queries breakpoints
+$breakpoints: (
+	xs: 480px,
+	sm: 768px,
+	md: 992px,
+	lg: 1200px
+); //main styles (resets)
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+//colors
+$primary: #f3283b;
+$secondary: #fc4f18; //forms
+
+.form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	margin-bottom: 5em;
+	@include from(sm) {
+		width: 40%;
+	}
+
+	button,
+	input {
+		box-sizing: border-box;
+		width: 100%;
+		border: none;
+		border-radius: 2px;
+		padding: 1em;
+		margin-bottom: 1em;
+		outline: 0;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		transition: all 0.3s;
+	}
+
+	input {
+		&:focus {
+			box-shadow: 0 0 20px rgba(black,.3);
+		}
+	}
+
+	button {
+		background: rgba(black,.2);
+		color: white;
+		cursor: pointer;
+
+		&:hover {
+			background: rgba(black,.4);
+		}
+	}
+
+	&__error {
+		background: rgba(#fdff68,.8);
+		border-radius: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 1em;
+		margin-bottom: 1.5em;
+		animation: error-animation 1.5s infinite;
+	}
+	@keyframes error-animation {
+		0% {
+			transform: scale(1);
+		}
+
+		20% {
+			transform: scale(1.05);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+}

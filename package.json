@@ -1,0 +1,41 @@
+{
+  "name": "bertsogaiak",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "larragerdev@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "firebase": "^5.0.4",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

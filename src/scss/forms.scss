@@ -1,0 +1,251 @@
+.form {
+	p {
+		font-size: 14px;
+	}
+}
+
+.loading {
+	height: 4px;
+	background: white;
+
+	&__animation {
+		height: 100%;
+		background: linear-gradient(90deg, $secondary, $primary);
+		animation: loader 1s infinite;
+	}
+}
+
+.single-page {
+	width: 100%;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.8em 1em;
+		background: linear-gradient(-90deg, $secondary, rgba(black,.2));
+	}
+
+	&__title {
+		color: white;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__count {
+		font-size: 14px;
+		font-weight: lighter;
+	}
+
+	&__likes {
+		color: white;
+
+		img {
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			padding: 0.5em;
+			cursor: pointer;
+			transition: all 0.3s;
+
+			&:active {
+				transform: scale(.6);
+			}
+
+			&.active {
+				background: rgba(black,.2);
+			}
+		}
+	}
+
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		background: #f0f0f0;
+		box-shadow: 0 10px 20px rgba(black, .6);
+		width: 100%;
+
+		a {
+			cursor: pointer;
+			padding: 0.8em 1.8em;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: $secondary;
+			transition: all 0.3s;
+
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+.search-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(45deg, black, #333333);
+	padding: 2em 1em;
+	@include from(sm) {
+		flex-direction: row;
+		padding: 3em 1em;
+	}
+
+	.search-input,
+	.search-select,
+	.search-submit {
+		padding: 0.5em;
+		height: 50px;
+		font-size: 15px;
+		border-radius: 2px;
+		border: none;
+		outline: 0;
+		overflow: hidden;
+		-webkit-appearance: none;
+		box-sizing: border-box;
+		transition: all 0.3s;
+		margin-bottom: 0.5em;
+		@include from(sm) {
+			margin-right: 0.5em;
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+			@include from(sm) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.search {
+		&-input {
+			width: 100%;
+			@include from(sm) {
+				width: 70%;
+			}
+		}
+
+		&-select {
+			width: 100%;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			@include from(sm) {
+				width: 29.5%;
+			}
+		}
+
+		&-submit {
+			cursor: pointer;
+			width: 100%;
+			color: $secondary;
+			font-weight: bold;
+			background: #f0f0f0;
+			transition: all 0.3s;
+			@include from(sm) {
+				width: 29.5%;
+			}
+
+			&:hover {
+				background: $secondary;
+				color: white;
+			}
+		}
+	}
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: white;
+	min-height: 100vh;
+
+	&__item {
+		position: relative;
+		line-height: 19px;
+		border-bottom: 1px solid rgba(black,.08);
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:active {
+			transform: scale(.95);
+		}
+
+		&.active {
+			transform: translateX(-20%);
+		}
+	}
+
+	&__element {
+		padding: 2em;
+	}
+
+	&__options {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		top: 0;
+		border-bottom: 1px solid rgba(black,.08);
+		transform: translateX(100%);
+		width: 20%;
+	}
+
+	&__likes {
+		cursor: pointer;
+		animation: likes-out 0.6s;
+	}
+
+	.liked {
+		animation: likes 0.6s;
+	}
+
+	&__metric {
+		display: block;
+		color: $secondary;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+}
+@keyframes loader {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+@keyframes likes {
+	0% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes likes-out {
+	0% {
+		transform: scale(1);
+	}
+
+	20% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
