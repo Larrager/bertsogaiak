@@ -1,18 +1,18 @@
 # Bertso Gaiak
 
-Bertso-eskola zein bertsozaleentzako aplikazioa erabilgarria da hau. Datuak **Bertsozale elkartetik** jaso dira.
+Bertso eskola zein bertsozaleentzako aplikazioa erabilgarria da hau. Datuak **Bertsozale elkartetik** jaso dira.
 
 Webgunea erabat irekia da, eta izena eman gabe eskuragarri izango dituzu gai guztiak atalka banatuak:
 
 - Ofizioak
-- Bakarkarkoak - Gaia emanda eta puntu-erantzunak -
+- Bakarkarkoak, eta puntu-erantzunak
 - 4000 gai baino gehiagorako
 - Metrika ezberdinan bilatzeko aukera
 
 Gustoko dituzun gaiak gordetzeko, login sistema baten bidez (google) zure emaila gordeko da.
 Ez da erabiltzaileen beste daturik eskatuko, ezta emailik bidaliko ere.
 
-**[Aplikazioa abiarazi](https://asiermusa.github.io/bertsogaiak)**
+**[Aplikazioa abiarazi](https://larrager.github.io/bertsogaiak)**
 
 ![image](https://i.imgur.com/FZaBTsI.png)
 
@@ -24,9 +24,10 @@ Ez da erabiltzaileen beste daturik eskatuko, ezta emailik bidaliko ere.
 
 > SPA aplikazioaren garapena (frontend) [@asiermusa](http://twitter.com/asiermusa).
 > Backend garapena [@Sergixnet](https://twitter.com/Sergixnet).
+> Telegrameko bot-a [@bertsogaiak](https://telegram.me/bertsogaiak), [@Sergixnet](https://twitter.com/Sergixnet).
 
 
-## Instalazioarako ezarpenak
+## Instalaziorako ezarpenak
 
 ``` bash
 # dependentziak instalatu
