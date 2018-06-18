@@ -1,6 +1,6 @@
 # Bertso Gaiak
 
-Bertso eskola zein bertsozaleentzako aplikazioa erabilgarria da hau. Datuak **Bertsozale elkartetik** jaso dira.
+Bertso eskola zein bertsozaleentzako aplikazio erabilgarria da hau. Datuak **Bertsozale elkartetik** jaso dira.
 
 Webgunea erabat irekia da, eta izena eman gabe eskuragarri izango dituzu gai guztiak atalka banatuak:
 
