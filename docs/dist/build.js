@@ -696,7 +696,7 @@ var r=function(e){if(Number(e.version.split(".")[0])>=2)e.mixin({beforeCreate:n}
 /*!***********************!*\
   !*** ./src/config.js ***!
   \***********************/
-/*! exports provided: config, apiUrls */function(e,t,n){"use strict";n.r(t),n.d(t,"config",function(){return r}),n.d(t,"apiUrls",function(){return i});const r={apiKey:"AIzaSyCQxB7IrvsQzkAbqoT2iMTFdCCJwBeLk5A",authDomain:"bertso-gaiak.firebaseapp.com",databaseURL:"https://bertso-gaiak.firebaseio.com",projectId:"bertso-gaiak",storageBucket:"bertso-gaiak.appspot.com",messagingSenderId:"61412632326"},i={ofizioak:"http://bertsogaiak.herokuapp.com/api/ofizioak/",gaiaEmanda:"http://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=gaia",puntuErantzunak:"http://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=puntu-erantzuna"}},"./src/main.js":
+/*! exports provided: config, apiUrls */function(e,t,n){"use strict";n.r(t),n.d(t,"config",function(){return r}),n.d(t,"apiUrls",function(){return i});const r={apiKey:"AIzaSyCQxB7IrvsQzkAbqoT2iMTFdCCJwBeLk5A",authDomain:"bertso-gaiak.firebaseapp.com",databaseURL:"https://bertso-gaiak.firebaseio.com",projectId:"bertso-gaiak",storageBucket:"bertso-gaiak.appspot.com",messagingSenderId:"61412632326"},i={ofizioak:"https://bertsogaiak.herokuapp.com/api/ofizioak/",gaiaEmanda:"https://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=gaia",puntuErantzunak:"https://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=puntu-erantzuna"}},"./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
